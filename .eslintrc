@@ -42,7 +42,8 @@
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended"
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
     ],
     // 此项是用来提供插件的，插件名称省略了eslint-plugin-
     "plugins": [
@@ -85,6 +86,7 @@
             0,
             "never"
         ], // 要求箭头函数体使用大括号
+        "prettier/prettier": 2, //这项配置对于不符合prettier规范的写法，eslint会报错
         "func-names": 0, // 强制使用命名的 function 表达式
         "prefer-const": 0, // 要求使用 const 声明那些声明后不再被修改的变量
         "no-extend-native": 2, // 禁止扩展原生类型

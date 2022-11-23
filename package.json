@@ -8,12 +8,13 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint-fix": "eslint --fix --ext .js --ext .tsx src",
+    "lint-fix": "eslint --fix --ext .tsx src",
     "prepare": "husky install"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
+      "eslint --cache --fix",
+      "prettier --write",
       "git add"
     ]
   },
@@ -29,12 +30,16 @@
     "@vitejs/plugin-react": "^2.2.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.2",
     "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "stylelint-config-prettier": "^9.0.4",
     "typescript": "^4.6.4",
     "vite": "^3.2.3"
   },
