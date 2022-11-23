@@ -1,0 +1,5 @@
+1、初始化工程、采用pnpm + monorepo的方式
+2、引入vite
+3、引入react
+4、引入ts
+5、引入esLint
